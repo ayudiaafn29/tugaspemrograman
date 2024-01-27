@@ -1,0 +1,73 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+
+<div class="w3-container">
+	<img src="banner.jpg" style="width:100%">
+</div>
+
+<div class="w3-bar w3-black w3-card-4">
+	<button class="w3-bar-item w3-button" onclick="openBag('Coach')">COACH</button>
+	<button class="w3-bar-item w3-button" onclick="openBag('Hermes')">HERMES</button>
+	<button class="w3-bar-item w3-button" onclick="openBag('Prada')">PRADA</button>
+	<button class="w3-bar-item w3-button" onclick="openBag('Bottega')">BOTTEGA VENETA</button>
+	<div class="w3-dropdown-hover">
+		<button class="w3-button">MORE</button>
+		<div class="w3-dropdown-content w3-bar-block w3-card-4">
+				<button class="w3-bar-item w3-button" onclick="openBag('LV')">LOUIS VUITTON</button>
+				<button class="w3-bar-item w3-button" onclick="openBag('VG')">VALENTINO GARAVANI</button>
+		</div>
+	</div>
+</div>
+
+<div id="Coach" class="w3-container bag w3-animate-zoom" style="display:none">
+	<center>
+	<h1>COACH</h1>
+	<img src="c.jpg" style="width:25%"><br><br>
+	Coach merupakan brand mewah asal New York, Amerika Serikat (AS). Brand Coach berawal dari sebuah bisnis keluarga berupa workshop dompet kulit di New York pada 1941. Berbekal keahlian mengolah material kulit menjadi tas, pasangan suami-istri, Miles dan Lilian Chan, membangun usaha kecil tersebut. Empat tahun kemudian, keduanya dipercaya mengambil alih bisnis keluarga bernama Manhattan Leather Bags. Merek ini kemudian berubah nama dan populer dengan brand Coach Leatherware.
+</div>
+
+<div id="Hermes" class="w3-container bag w3-animate-zoom" style="display:none">
+	<center>
+	<h1>HERMES</h1>
+	<img src="h.jpg" style="width:25%"><br><br>
+	Brand ini didirikan pada tahun 1837 dan telah menjadi salah satu brand barang mewah terbaik di dunia selama lebih dari 180 tahun. Hermès juga dikenal karena keahlian kerajinan tangan tradisional dan terus mempertahankan nilai-nilai tersebut dalam proses produksi produknya.
+</div>
+
+<div id="Prada" class="w3-container bag w3-animate-zoom" style="display:none">
+	<center>	
+	<h1>PRADA</h1>
+	<img src="p.jpg" style="width:25%"><br><br>
+	Prada adalah suatu merek produk mode (fashion) dari Italia yang secara khusus membuat barang-barang mewah untuk pria dan wanita. Prada didirikan di Milan dan kemudian mulai menyebar ke seluruh Eropa, Amerika, bahkan dunia. Produk Prada terkenal karena desainnya yang sederhana dan elegan pada berbagai produk seperti tas tangan dan sepatu wanita, ikat pinggang, pakaian dalam, gaun, dan pakaian pria.
+</div>
+
+<div id="Bottega" class="w3-container bag w3-animate-zoom" style="display:none">
+	<center>	
+	<h1>BOTTEGA VENETA</h1>
+	<img src="b.jpg" style="width:25%"><br><br>
+	Bottega Veneta adalah brand luxury fashion asal Italia yang berakar di Milan. Didirikan pada 1966, label ini dirintis oleh Michele Taddei dan Renzo Zengiaro. Pabriknya berlokasi di sebuah villa yang dibangun pada abad ke-18 di Montebello Vicentino, sedangkan kantor pusatnya berada di Lugano, Swiss, sementara kantor perwakilannya berada di Milan dan Vicenza, Italia.
+</div>
+
+<div id="LV" class="w3-container bag w3-animate-zoom" style="display:none">
+	<center>	
+	<h1>LOUIS VUITTON</h1>
+	<img src="lv.jpg" style="width:25%"><br><br>
+	Louis Vuitton Malletier, biasa disebut sebagai Louis Vuitton (pengucapan bahasa Prancis: [lwi vɥitɔ̃]) atau disingkat LV, adalah sebuah perusahaan barang mewah dan rumah mode asal Prancis yang didirikan pada tahun 1854 oleh Louis Vuitton. Perusahaan ini beroperasi di 50 negara dengan lebih dari 460 gerai di seluruh dunia dan untuk enam tahun berturut-turut (2006–2012), Louis Vuitton disebut sebagai merek mewah paling berharga di dunia.
+</div>
+
+<div id="VG" class="w3-container bag w3-animate-zoom" style="display:none">
+	<center>	
+	<h1>VALENTINO GARAVANI</h1>
+	<img src="vg.jpg" style="width:25%"><br><br>
+	Valentino didirikan pada tahun 1960 di Italia oleh Valentino Garavani. Brand ini berpusat di Milan, sementara lokasi perancangan produk berada di Roma. Debut internasional pertama Valentino sudah dilakukan sejak 1962 di Florence, di mana saat itu Florence merupakan pusat mode Italia.
+</div>
+
+<script>
+function openBag(namaBag) {
+ var i;
+ var x = document.getElementsByClassName("Bag");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none";
+ }
+ document.getElementById(namaBag).style.display = "block";
+}
+</script>
